@@ -7,15 +7,5 @@ import { disableDebugTools } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  username = '';
 
-  button = true;
-
-  enableButton() {
-    this.button = false;
-  }
-
-  eraseInput() {
-    this.username = '';
-  }
  }

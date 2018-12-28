@@ -6,7 +6,7 @@
 </ol>
 
 <label for="username">username</label>
-<input [(ngModel)]="username" (ngModelChange)="enableButton()" type="text" name="username" id="username">
-<button [disabled]="button" class="btn btn-primary" (click)="eraseInput()">Click Me</button>
+<input [(ngModel)]="username" type="text" name="username" id="username">
+<button [disabled]="username === ''" class="btn btn-primary" (click)="username = ''">Click Me</button>
 
 <p>{{ username }}</p>
